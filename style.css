@@ -50,9 +50,9 @@ header #nav-bar a{
     font-family: "Open Sans", sans-serif;
 }
 
-header #nav-bar a::after {
+/* header #nav-bar a::after {
     content: url(f107);
-}
+} */
 
 header #nav-bar #donate {
     color: red;
@@ -121,6 +121,7 @@ blockquote {
     color: #aaa;
     padding: 5px 28px;
     float: left;
+    padding-left: 0rem;
     width: 40%;
     font-size: 23px;
     font-style: italic;
@@ -160,6 +161,7 @@ blockquote span {
     color: #13164B;
     font-size: 25px;
 }
+
 .gallery .overlay-texts p {
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
@@ -187,7 +189,7 @@ blockquote span {
 }
 
 .gallery .overlay {
-    background-color: rgba(198,155,103,.7);
+    background-color: rgba(148, 106, 54, 0.7);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -207,30 +209,102 @@ main #after-main {
     justify-content: flex-end;
     gap: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 3rem;
+    margin-left: -1rem;
 }
 
 .related .multimedia {
     box-sizing: border-box;
     width: 47%;
-    height: 11rem;
-    border: 2px solid red;
+    height: 13rem;
+    border: 2px solid #FF5835;
 }
 
 .related .news {
     box-sizing: border-box;
     width: 47%;
-    height: 11rem;
-    border: 2px solid red;
+    height: 13rem;
+    border: 2px solid #FF5835;
 }
 
 .related .publications {
     box-sizing: border-box;
     width: 47%;
-    height: 11rem;
-    border: 2px solid red;
+    height: 13rem;
+    border: 2px solid #FF5835;
 }
 
 .related img {
     height: 100%;
     width: 40%;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-span {
+    align-self: center;
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+
+.footer-span a{
+    color: #FF5835;
+    text-decoration: none;
+}
+.footer-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+.link-home{
+    margin-left: 10%;
+    font-size: 12px;
+}
+
+.link-home a{
+    text-decoration: none;
+    color: #FF5835;
+}
+
+.fa-facebook-square {
+    color: black;
+}
+
+.fa-twitter-square {
+    color: black;
+}
+
+.fa-instagram {
+    color: black;
+}
+
+.fa-youtube-play {
+    color: black;
+}
+
+footer #subscribe {
+    background-color: white;
+    color: #FF5835;
+    font-size: 14px;
+    padding: 6px 33px;
+    border-radius: 2rem;
+    border: 3px solid #FF5835;
+    margin-left: 2rem;
+    height: 2rem;
+    align-self: center;
+    cursor: pointer;
+    transition: all .6s cubic-bezier(.39,.5,.15,1.36);
+}
+
+footer #subscribe:hover{
+    background-color: #FF5835;
+    transform: scale(1.05);
+    color: white;
 }
