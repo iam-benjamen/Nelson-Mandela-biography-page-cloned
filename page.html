@@ -5,32 +5,113 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/ac881f5f39.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
         <title>Nelson Mandela</title>
     </head>
     <body>
         <header>
-            <img id="logo" src="https://www.nelsonmandela.org/uploads/files/_AUTOx90_crop_center-center/NMF-logo.png">
+            <div class="top">
+                <img id="logo" src="https://www.nelsonmandela.org/uploads/files/_AUTOx90_crop_center-center/NMF-logo.png">
+                <span class="vertical-line"></span>
+            </div>
+
             <nav id="nav-bar">
-                <a href="#">
-                    WHO WE ARE
-                    <i class="fal fa-angle-down"></i>
-                </a>
-               
-                <a href="#">
-                    MANDELA ARCHIVES
-                </a>
-                <a href="#">
-                    DIALOGUE & ADVOCACY
-                </a>
-                <a href="#">
-                    MEDIA & NEWS
-                </a>
-                <a href="#">
-                    CONTACT
-                </a>
-                <a id="donate" href="#">
-                    DONATE
-                </a>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" onmouseover="firstList()" class="dropbtn">
+                            WHO WE ARE
+                            <span>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-content" id="drop1">
+                            <a href="#">Overview</a>
+                            <a href="#">About Us</a>
+                            <a href="#">What We Do</a>
+                            <a href="#">Our Team</a>
+                            <a href="#">Our donors</a>
+                            <a href="#">Mandela Day</a>
+                            <a href="#">Annual Reports & Financials</a>
+                            <a href="#">Vacancies</a>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" onmouseover="secondList()">
+                            MANDELA ARCHIVES
+                            <span>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-content" id="drop2">
+                            <a href="#">Overview</a>
+                            <a href="#">Biography & Timeline</a>
+                            <a href="#">Genealogy</a>
+                            <a href="#">Exhibitions</a>
+                            <a href="#">Archives</a>
+                            <a href="#">Researcher resources</a>
+                            <a href="#">Education Hub</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" onmouseover="thirdList()">
+                            DIALOGUE & ADVOCACY
+                            <span>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-content" id="drop3">
+                            <a href="#">Overview</a>
+                            <a href="#">Annual lecture</a>
+                            <a href="#">Each 1 Feed 1</a>
+                            <a href="#">Vangasali</a>
+                            <a href="#">Poverty and Inequality</a>
+                            <a href="#">Reckoning with the past</a>
+                            <a href="#">Identity Politics</a>
+                            <a href="#">Dialogues</a>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" onmouseover="fourthList()">
+                            MEDIA & NEWS
+                            <span>
+                                <i class="fa fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <div class="dropdown-content" id="drop4">
+                            <a href="#">Latest News</a>
+                            <a href="#">Media Statements</a>
+                            <a href="#">Events</a>
+                            <a href="#">Opinion</a>
+                            <a href="#">Apps</a>
+                            <a href="#">Public Scams</a>
+                            <a href="#">Publication</a>
+                            <a href="#">Exhibitions</a>
+                            <a href="#">Multimedia</a>
+                            <a href="#">On This Day</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">
+                            CONTACT
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a id="donate" href="#">
+                            DONATE
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <img id="corner-img" src="https://www.nelsonmandela.org/images/Mandela-day-side-logo.svg">
         </header>
@@ -296,7 +377,7 @@
             <h2>Related</h2>
             <div class="related">
                 <div class="multimedia">
-                    <div>
+                    <div class="side-img">
                         <img src="https://www.nelsonmandela.org/uploads/_imager/uploads/files/148205/mandela_life_W600_H500_Mcrop_upscale1_CZ1_I1_Q80_P50-50_WQ70.jpg">
                     </div>
                     <div class="media-body">
@@ -325,7 +406,7 @@
                 </div>
 
                 <div class="multimedia">
-                    <div>
+                    <div class="side-img">
                         <img src="https://www.nelsonmandela.org/uploads/_imager/uploads/files/42577/Mandela08-1_W600_H500_Mcrop_upscale1_CZ1_I1_Q80_P50-50_WQ70.jpg">
                     </div>
                     <div class="media-body">
@@ -354,7 +435,7 @@
                 </div>
 
                 <div class="multimedia">
-                    <div>
+                    <div class="side-img">
                         <img src="https://www.nelsonmandela.org/uploads/_imager/uploads/files/65662/MacMillian_W600_H500_Mcrop_upscale1_CZ1_I1_Q80_P50-50_WQ70.jpg">
                     </div>
                     <div class="media-body">
