@@ -64,6 +64,16 @@ header #nav-bar a:hover {
     color: #FF5835;
 }
 
+.icon {
+    display: none;
+    text-decoration: none;
+    border: 2px solid grey;
+    color: black;
+    padding: 0.4rem 0.8rem;
+    border-radius: 3px;
+    margin-right: 2rem;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -137,6 +147,7 @@ section figure {
 }
 
 section #overlay {
+    display: block;
     max-width: 100%;
     float: right;
     width: 50%;
@@ -343,7 +354,7 @@ main #after-main {
 }
 
 #btn-home {
-    margin-left: 90%;
+    margin-left: 80%;
     background-color: Black;
     padding: 11px;
 }
@@ -446,10 +457,55 @@ footer #subscribe:hover{
 
     .related .multimedia{
         width: 90%;
+        justify-content: center;
     }
 }
 
 @media only screen and 
 (max-width: 960px){
-    
+    section #overlay {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    blockquote {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .overlay-texts {
+        left: 7rem;
+    }
+
+    .gallery .overlay-texts h2{
+        font-size: 20px;
+    }
+    .gallery button {
+        padding: 0.4rem 4rem;
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header #nav-bar ul{
+        display: none;
+    }
+
+    header #corner-img {
+        display: none;
+    }
+    header .top .vertical-line {
+        display: none;
+    }
+
+    header .icon {
+        display: flex;
+        align-self: center;
+    }
+   
 }
