@@ -87,7 +87,7 @@ header #nav-bar a:hover {
     display: block;
     width: 16rem;
     text-align: left;
-    height: 22rem;
+    height: max-content;
     display: none;
     position: absolute;
     background-color: white;
@@ -102,10 +102,11 @@ header #nav-bar a:hover {
     display: block;
 }
 .dropdown-content a:hover {
-    background-color: rgb(116, 112, 112);
+    background-color: rgb(212, 209, 209);
     color: black !important;
 }
-.show {
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -180,8 +181,6 @@ p .inline {
 
 blockquote {
     margin: 0;
-    margin-block: 0;
-    margin-inline: 0;
     color: #aaa;
     padding: 5px 28px;
     float: left;
@@ -354,9 +353,10 @@ main #after-main {
 }
 
 #btn-home {
-    margin-left: 80%;
+    margin-left: 90%;
     background-color: Black;
-    padding: 11px;
+    border: none;
+    padding: 15px;
 }
 
 .fa-chevron-up:before {
@@ -399,19 +399,8 @@ footer{
     color: #FF5835;
 }
 
-.fa-facebook-square {
-    color: black;
-}
-
-.fa-twitter-square {
-    color: black;
-}
-
-.fa-instagram {
-    color: black;
-}
-
-.fa-youtube-play {
+.fa-facebook-square, 
+.fa-instagram, .fa-youtube-play, .fa-twitter-square {
     color: black;
 }
 
@@ -499,6 +488,7 @@ footer #subscribe:hover{
     header #corner-img {
         display: none;
     }
+    
     header .top .vertical-line {
         display: none;
     }
