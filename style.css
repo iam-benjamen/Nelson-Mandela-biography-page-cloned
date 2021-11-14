@@ -64,15 +64,6 @@ header #nav-bar a:hover {
     color: #FF5835;
 }
 
-.icon {
-    display: none;
-    text-decoration: none;
-    border: 2px solid grey;
-    color: black;
-    padding: 0.4rem 0.8rem;
-    border-radius: 3px;
-    margin-right: 2rem;
-}
 
 .dropdown {
     position: relative;
@@ -153,6 +144,7 @@ section #overlay {
     float: right;
     width: 50%;
     height: auto;
+    margin-bottom: 1rem;
 }
 
 figure img {
@@ -375,6 +367,7 @@ footer{
     align-self: center;
     font-size: 14px;
     font-family: "Open Sans";
+    margin-left: 15px;
 }
 
 .footer-span a{
@@ -424,6 +417,25 @@ footer #subscribe:hover{
     color: white;
 }
 
+.checkbtn {
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    margin-top: -4rem;
+    margin-right: 1rem;
+    border: 1px solid rgb(88, 86, 86);
+    padding: 0.2rem 0.8rem;
+    border-radius: 6px;
+}
+.checkbtn:hover {
+    background-color: rgb(231, 227, 227);
+}
+
+#check {
+    display: none;
+}
+
 @media only screen and 
 (max-width: 1190px) {
     header{
@@ -432,7 +444,7 @@ footer #subscribe:hover{
     }
 
     header #nav-bar ul {
-        padding-left: 5rem;
+        padding-left: 13rem;
     }
 }
 
@@ -452,6 +464,9 @@ footer #subscribe:hover{
 
 @media only screen and 
 (max-width: 960px){
+    #logo {
+        padding-left: 1rem;
+    }
     section #overlay {
         width: 100%;
         margin-bottom: 1rem;
@@ -461,6 +476,11 @@ footer #subscribe:hover{
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    #btn-home {
+        margin-left: 82%;
+    }
+
     footer {
         flex-direction: column;
         align-items: center;
@@ -477,12 +497,24 @@ footer #subscribe:hover{
         padding: 0.4rem 4rem;
     }
     header {
-        flex-direction: row;
-        justify-content: space-between;
+        display: block;
     }
 
     header #nav-bar ul{
+        width: auto;
+        flex-direction: column;
         display: none;
+        gap: 1.4rem;
+        padding-left: 3rem;
+    }
+
+    header #nav-bar ul li {
+        display: block;
+    }
+    header #nav-bar ul .dropbtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     header #corner-img {
@@ -493,9 +525,71 @@ footer #subscribe:hover{
         display: none;
     }
 
-    header .icon {
-        display: flex;
-        align-self: center;
+    .checkbtn {
+        display: block;
+        float: right;
     }
-   
+
+    #check:checked ~ ul {
+        display: flex;
+    }
+
+    header #nav-bar #donate {
+        padding: 0.5rem 8rem;
+        width: auto;
+    }
+
+    .dropdown-content {
+        position: relative;
+        box-shadow: none;
+    }
+
+    .dropdown-content a:hover{
+        color: red;
+    }
+}
+
+@media only screen and 
+(max-width: 630px) {
+    .related .multimedia {
+        flex-direction: column;
+        height: max-content;
+        width: 100%;
+    }
+
+    .related img{
+        width: -webkit-fill-available;
+    }
+
+    .multimedia .media-body{
+        width: initial;
+    }
+
+    .gallery .overlay-texts h2 {
+        font-size: 13px;
+    }
+
+    .gallery .overlay-texts {
+        left: 3rem;
+    }
+}
+
+@media only screen and
+(max-width:388px) {
+    .gallery .overlay-texts{
+        top: 15%;
+    }
+    .gallery .overlay-texts h2 {
+        font-size: 10px;
+    }
+    .gallery .overlay-texts p {
+        font-size: 9px;
+    }
+    .gallery button {
+        padding: 0.1rem 2rem;
+        margin-left: 2rem;
+    }
+    header #nav-bar #donate {
+        padding: 0.5rem 5rem;
+    }
 }
