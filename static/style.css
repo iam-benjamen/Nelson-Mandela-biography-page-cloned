@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.fas fa-bars {
+.fa-bars:before {
     color: darkgray;
 }
 
@@ -176,7 +176,6 @@ p .inline {
 }
 
 blockquote {
-    margin: auto;
     color: #aaa;
     padding: 5px 28px;
     float: left;
@@ -428,7 +427,7 @@ footer #subscribe:hover{
     display: none;
     margin-top: -4rem;
     margin-right: 1rem;
-    border: 1px solid rgb(88, 86, 86);
+    border: 1px solid darkgray;
     padding: 0.2rem 0.8rem;
     border-radius: 6px;
 }
@@ -458,6 +457,7 @@ footer #subscribe:hover{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-left: 0.5rem;
     }
 
     .related .multimedia{
@@ -477,8 +477,7 @@ footer #subscribe:hover{
     }
 
     blockquote {
-        width: 90%;
-        margin-bottom: 1rem;
+        width: 80%;
     }
 
     #btn-home {
