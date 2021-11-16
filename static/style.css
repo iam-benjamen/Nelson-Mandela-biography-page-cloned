@@ -572,6 +572,10 @@ footer #subscribe:hover{
     .gallery .overlay-texts {
         left: 3rem;
     }
+
+    section {
+        width: 90%;
+    }
 }
 
 @media only screen and
