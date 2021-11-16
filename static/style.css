@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+.fas fa-bars {
+    color: darkgray;
+}
+
 main {
     margin: auto;
     width: 100%;
@@ -172,7 +176,7 @@ p .inline {
 }
 
 blockquote {
-    margin: 0;
+    margin: auto;
     color: #aaa;
     padding: 5px 28px;
     float: left;
@@ -473,7 +477,7 @@ footer #subscribe:hover{
     }
 
     blockquote {
-        width: 100%;
+        width: 90%;
         margin-bottom: 1rem;
     }
 
@@ -570,7 +574,7 @@ footer #subscribe:hover{
     }
 
     .gallery .overlay-texts {
-        left: 3rem;
+        left: 5rem;
     }
 
     section {
