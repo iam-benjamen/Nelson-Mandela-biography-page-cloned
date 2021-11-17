@@ -10,4 +10,4 @@ Thanks for checking this out,
 You can reach me at `areotimileyin1@gmail.com`
 
 # Live
-Visit `mandela-bio-clone.netlify.app`
+Visit [mandela clone](www.mandela-bio-clone.netlify.app)
